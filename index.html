@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile</title>
+    <link rel="shortcut icon" href="./images/github-logo-light.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="container">
+      <img data-name="avatar_url" src="" alt="Personal pic" />
+      <form class="form">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="user-name"
+            required
+            placeholder="GitHub user-name"
+          />
+        </div>
+        <button class="button">Get Data</button>
+        <p class="error-message"></p>
+      </form>
+      <div class="data">
+        <p class="data-type">Name: <span data-name="name"></span></p>
+        <p class="data-type">Bio: <span data-name="bio"></span></p>
+        <p class="data-type">Followers: <span data-name="followers"></span></p>
+        <p class="data-type">
+          Public repos: <span data-name="public_repos"></span>
+        </p>
+      </div>
+    </article>
+    <script src="./script.js"></script>
+  </body>
+</html>

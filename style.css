@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #0d1117;
+  color: #a2a3a5;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  max-width: 300px;
+  margin: 160px auto;
+}
+
+.form {
+  justify-self: center;
+}
+
+.error-message {
+  font-size: 9px;
+  color: rgb(238, 140, 129);
+  margin-block-start: 4px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url(./images/github-logo-dark.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 23px;
+  aspect-ratio: 1/1;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.user-name {
+  position: relative;
+  font-size: 10px;
+  background: #24292e36;
+  padding: 5px 5px 4px;
+  border: none;
+  border-bottom: 4px solid #24292e;
+  margin-inline-end: 4px;
+  border-radius: 5px;
+  color: #a2a3a5;
+}
+
+.user-name::placeholder {
+  color: #72767a;
+  color: #a2a3a5;
+}
+
+.user-name:focus {
+  outline: none;
+}
+
+.button {
+  border: none;
+  font-size: 10px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background-color: #24292e;
+  color: #a2a3a5;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #24292e57;
+}
+
+.data {
+  margin-block-start: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.data-type {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.data-type span {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+[data-name="avatar_url"] {
+  align-self: center;
+  display: none;
+  width: 120px;
+  border-radius: 5px;
+  max-width: 100%;
+  justify-self: center;
+  margin-block-end: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
